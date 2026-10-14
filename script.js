@@ -1,6 +1,8 @@
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function (event) {
-    const target = document.querySelector(this.getAttribute("href"));
+    const id = this.getAttribute("href");
+    if (id.length < 2) return;
+    const target = document.querySelector(id);
     if (target) {
       event.preventDefault();
       target.scrollIntoView({ behavior: "smooth" });

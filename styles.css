@@ -25,3 +25,18 @@
   .service-details{grid-column:2 / -1;grid-template-columns:1fr;gap:18px}
   .service-details a{justify-self:start}
 }
+/* Pilot section additions */
+.pilot-foot{display:grid;grid-template-columns:1fr 340px;gap:50px;align-items:end;margin-top:55px}
+.pilot-label{font:600 10px 'DM Mono',monospace;letter-spacing:1.5px;color:#777;margin-bottom:16px}
+.pilot-looks{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.pilot-looks li{border:1px solid #333;border-radius:100px;padding:9px 15px;font-size:13px;font-weight:500;color:#cfcfc9}
+.pilot-note{color:#bdbdb7;font-size:14px;line-height:1.65;font-weight:500;margin-bottom:20px}
+.pilot-cta .button-light{display:inline-flex}
+.also-line{margin-top:45px;padding-top:22px;border-top:1px solid #292929;color:#777;font:11px 'DM Mono',monospace;letter-spacing:.6px}
+@media(max-width:800px){
+  .pilot-foot{grid-template-columns:1fr;gap:35px}
+  .service-list>div{grid-template-columns:40px 1fr}
+}
+
+/* stop the hero orbit graphic causing sideways scroll on phones (was in the original page) */
+.hero{overflow:hidden}
